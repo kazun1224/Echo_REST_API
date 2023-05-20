@@ -17,4 +17,9 @@ go mod tidy
 マイグレーションの実行
 migrate/migrate.goのmain関数を実行させるため下記を実行する
 GO_ENVのみdb.goのNewDBでgodotenv.Load()を実行する前に処理をしているためここで指定
+
+### マイグレーションの実行コマンド
 GO_ENV=dev go run migrate/migrate.go
+
+### サーバー起動コマンド
+GO_ENV=dev go run main.go
